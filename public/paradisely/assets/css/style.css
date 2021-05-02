@@ -1,0 +1,572 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+    --header-height: 3rem !important;
+
+    /*===  Colors  ===*/
+    --first-color: #ffffff !important;
+    --first-color-light: #1402e3 !important;
+    --first-color-dark: #585bd2 !important;
+    --first-color-darken: #a83e51 !important;
+    --white-color: #ffffff !important;
+    --font-color: #585759 !important;
+
+    /*===  Font and typography  ===*/
+    --body-font: "Manrope", sans-serif !important;
+    --big-font-size: 2.5rem !important;
+    --normal-font-size: 0.938rem !important;
+
+    /*===  z-index  ===*/
+    --z-fixed: 100 !important;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --big-font-size: 5rem !important;
+        --normal-font-size: 1rem !important;
+    }
+}
+
+/*===  BASE  ===*/
+*,
+::before,
+::after {
+    box-sizing: border-box !important;
+}
+
+body {
+    margin: var(--header-height) 0 0 0 !important;
+    padding: 0 !important;
+    font-family: var(--body-font) !important;
+    font-size: var(--normal-font-size) !important;
+    font-weight: 500 !important;
+
+    /* background-color: #fca4a6 !important; */
+}
+
+h1,
+p,
+ul {
+    margin: 0 !important;
+}
+
+ul {
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* img {
+  max-width: 100% !important;
+  height: auto !important;
+} */
+
+/*===  LAYOUT  ===*/
+.bd-grid {
+    max-width: 1700px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.satu-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--first-color);
+}
+
+/*===  NAV  ===*/
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100%;
+        padding: 2.5rem 1.5rem 0;
+        background: rgba(20, 1, 230, 0.3);
+        backdrop-filter: blur(10px);
+        transition: 0.5s;
+    }
+
+    .nav__link,
+    .nav__close {
+        color: var(--white-color) !important;
+    }
+}
+
+.nav__close {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav__item {
+    margin-bottom: 2rem;
+}
+
+.nav__close,
+.nav__link {
+    color: var(--font-color);
+}
+.nav__toggle {
+    color: var(--first-color-dark);
+}
+
+.nav__link:hover {
+    color: var(--first-color-dark);
+}
+
+.nav__toggle {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*===  Show Menu  ===*/
+.show {
+    right: 0;
+}
+
+.active {
+    color: var(--first-color-light);
+}
+
+/*===  HERO SECTION  ===*/
+.hero {
+    /* padding-top: 30px; */
+}
+
+.hero__text {
+    /* padding-top: 200px; */
+    margin-top: 150px !important;
+}
+
+.hero__small {
+    color: var(--first-color-dark);
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 17px;
+    margin-bottom: 30px !important;
+}
+
+.hero__big {
+    text-transform: capitalize;
+    font-weight: 900;
+    margin-bottom: 30px !important;
+}
+
+.hero__description {
+    margin-bottom: 30px !important;
+}
+
+.btn {
+    width: 300px !important;
+    padding-top: 6px !important;
+    border-color: var(--first-color-light) !important;
+}
+
+.btn:active {
+    transform: translateY(4px);
+    transition: 0.2s;
+}
+
+.btn-secondary {
+    background-color: var(--first-color-light) !important;
+}
+
+.btn-outline-secondary {
+    color: var(--first-color-light) !important;
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--first-color-light) !important;
+    color: var(--white-color) !important;
+    transition: 0.7s !important;
+}
+
+/*===  KEBERAGAMAN SECTION  ===*/
+.keberagaman__text {
+    justify-content: center !important;
+    text-align: center;
+}
+
+/*===  BUDAYA SECTION  ===*/
+.budaya__text {
+    margin-top: 200px !important;
+}
+
+.budaya__image {
+    width: 700px;
+}
+
+.hero__arrow {
+    color: var(--first-color-dark);
+    font-weight: 800;
+    font-size: 17px;
+    margin-bottom: 30px !important;
+}
+
+.icon__selengkapnya {
+    position: relative;
+    top: 1.5px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.iframe__container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    margin-bottom: -18% !important;
+}
+.iframe__container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+}
+
+/*===  VIRTUAL SECTION  ===*/
+.virtual {
+    margin-top: -3% !important;
+}
+
+/*===  MAPBOX SECTION  ===*/
+#map {
+    height: 55vh;
+    width: 100%;
+}
+
+/*===  FOOTER SECTION  ===*/
+.footer {
+    margin-top: 150px !important;
+    margin-bottom: 50px;
+}
+
+.icon__footer {
+    color: var(--font-color);
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.footer__bold {
+    font-weight: 700;
+    color: var(--font-color);
+    margin-bottom: 30px !important;
+}
+
+.footer__nav > li > a {
+    color: var(--font-color);
+}
+
+.footer__nav > li > a:hover,
+.icon__footer:hover,
+.contact {
+    color: var(--first-color-light);
+}
+
+/*===  EKPLORASI  ===*/
+.eksplore {
+    overflow: hidden;
+}
+.eksplorasi__hero {
+    width: 100%;
+    height: 36vh !important;
+    object-fit: cover;
+}
+
+.ekplore__center {
+    position: absolute;
+    top: 56%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: var(--white-color);
+    justify-content: center !important;
+    text-align: center;
+}
+
+.explore__big {
+    font-size: 50px;
+    font-weight: 630;
+}
+
+.explore__small {
+    margin-top: -5%;
+    color: var(--white-color);
+    font-size: 15px;
+    font-weight: 400;
+    justify-content: center;
+    text-transform: unset;
+}
+
+/*===  TEMPAT EKSPLORASI SECTION  ===*/
+.tempat {
+    overflow: hidden;
+}
+
+.tempat__small {
+    color: var(--font-color);
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.tempat__kategori {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    width: 95px;
+    padding: 10px 10px;
+    background-color: rgb(194, 203, 214, 0.3);
+    justify-content: center;
+    align-items: center;
+}
+
+.tempat__nama {
+    color: var(--first-color-light);
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.tempat__letak {
+    text-transform: uppercase;
+    margin-top: 10px !important;
+    font-size: 12px;
+}
+
+.tempat__comment {
+    color: var(--font-color);
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+.bx-comment-detail {
+    position: relative;
+    top: 7px;
+    color: var(--first-color-light);
+    font-size: 27px;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: var(--first-color-light);
+}
+
+.card {
+    border-radius: 7px !important;
+}
+
+.card-img-top {
+    border-top-left-radius: 7px !important;
+    border-top-right-radius: 7px !important;
+}
+
+/*===  MEDIA QUERIES  ===*/
+.rekomendasi {
+    overflow-x: hidden;
+}
+.rekomendasi > .container {
+    background-color: #1401e6;
+    border-radius: 8px;
+}
+
+.rekomendasi__text {
+    padding: 50px 25px !important;
+}
+
+.rekomendasi__big,
+.rekomendasi__small {
+    color: var(--white-color);
+}
+
+.rekomendasi__big {
+    font-weight: 900;
+}
+
+.rekomendasi__button {
+    background-color: var(--white-color) !important;
+    color: var(--font-color) !important;
+}
+
+.rekomendasi__image {
+    height: 100%;
+    width: 300px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    text-align: center;
+}
+
+/*===  WISATA DAERAH   ===*/
+.image__wisata {
+    padding: 30px;
+}
+
+.wisata__next {
+    font-weight: normal;
+}
+
+/*=== VIRTUAL TOUR SECTION ===*/
+.virtual__text {
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+.virtual__image {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.eksplorasi__gambar {
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
+}
+
+.virtual__card {
+    border-radius: 2px !important;
+}
+
+/*===  MEDIA QUERIES  ===*/
+.kontak__tebal {
+    font-weight: bold;
+}
+
+/*===  MEDIA QUERIES  ===*/
+.tentang__tebal {
+    font-weight: bold;
+}
+
+.tentang__icon {
+    color: var(--first-color-light);
+    font-size: 21px;
+}
+
+.detail {
+    filter: brightness(50%);
+}
+
+.alamat {
+    margin-top: -20px !important;
+    margin-bottom: 15px !important;
+}
+
+.komentar__gambar {
+    border-radius: 50%;
+    padding: 15px 20px;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.cari__kategori {
+    cursor: pointer;
+    background-color: #eee;
+    padding: 8px 20px;
+    margin: 5px;
+    letter-spacing: 1px;
+}
+
+/*===  MEDIA QUERIES  ===*/
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1700px !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero__text,
+    .budaya__text {
+        margin-top: 10px !important;
+    }
+
+    .hero__button {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    .nav {
+        height: calc(var(--header-height) + 1.5rem);
+    }
+
+    .nav__toggle,
+    .nav__close {
+        display: none;
+    }
+
+    .nav__list {
+        display: flex;
+    }
+
+    .nav__item {
+        margin-left: 3rem;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .virtual__image,
+    .eksplorasi__gambar {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .rekomendasi__button {
+        width: 150px !important;
+    }
+}
