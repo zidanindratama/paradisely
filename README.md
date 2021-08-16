@@ -11,8 +11,6 @@ Temukan keindahan dan keberagaman budaya negara Indonesia. Paradisely membantu k
 - Pengunjung
 
 ## Dalam pembuatan aplikasi Paradisely, apa saja sih yang dipakai?
-
-| <!--            | [sweet-alert]()                       | [Mapbox API](https://www.mapbox.com/)             | [laravel7](https://laravel.com/docs/7.x/releases) | --> |
 Dalam pembuatan aplikasi ini, Paradisely memakai framework PHP yaitu Laravel dan berbagai macam package dan plugin.
 
 | Package                                                  | Plugin                                   | Technology                                          |
