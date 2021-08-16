@@ -19,7 +19,7 @@ Dalam pembuatan aplikasi ini, Paradisely memakai framework PHP yaitu Laravel dan
 |                                                          | [Leaflet js](https://leafletjs.com/)     | [HTML](https://twitter.com/zidanindratama)       |
 |                                                          | [AOS](https://michalsnik.github.io/aos/) | [CSS](https://twitter.com/zidanindratama)        |
 |                                                          | [CkEditor](https://ckeditor.com/)        | [JavaScript](https://twitter.com/zidanindratama) |
-|                                                          | [AOS](https://michalsnik.github.io/aos/) | [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) |
+|                                                          |  | [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) |
 
 ## Aplikasi Paradisely punya fitur apa saja?
 
