@@ -16,12 +16,12 @@ Dalam pembuatan aplikasi ini, Paradisely memakai framework PHP yaitu Laravel dan
 | Package                                                  | Plugin                                   | Technology                                          |
 | -------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------- |
 | [sweet-alert](https://github.com/realrashid/sweet-alert) | [Mapbox API](https://www.mapbox.com/)    | [laravel7](https://laravel.com/docs/7.x/releases)   |
-|                                                          | [Leaflet js](https://leafletjs.com/)     | [HTML](https://laravel.com/docs/7.x/releases)       |
-|                                                          | [AOS](https://michalsnik.github.io/aos/) | [CSS](https://laravel.com/docs/7.x/releases)        |
-|                                                          | [CkEditor](https://ckeditor.com/)        | [JavaScript](https://laravel.com/docs/7.x/releases) |
-|                                                          | [AOS](https://michalsnik.github.io/aos/) | [Bootstrap4](https://laravel.com/docs/7.x/releases) |
+|                                                          | [Leaflet js](https://leafletjs.com/)     | [HTML](https://twitter.com/zidanindratama)       |
+|                                                          | [AOS](https://michalsnik.github.io/aos/) | [CSS](https://twitter.com/zidanindratama)        |
+|                                                          | [CkEditor](https://ckeditor.com/)        | [JavaScript](https://twitter.com/zidanindratama) |
+|                                                          | [AOS](https://michalsnik.github.io/aos/) | [Bootstrap4](https://getbootstrap.com/docs/4.6/getting-started/introduction/) |
 
-## Aplikasi WarungKita punya fitur apa saja?
+## Aplikasi Paradisely punya fitur apa saja?
 
 - Login
 - Register
@@ -30,6 +30,6 @@ Dalam pembuatan aplikasi ini, Paradisely memakai framework PHP yaitu Laravel dan
 - Notifikasi sweet alert
 - Virtual Tour
 
-## Link demo WarungKita
+## Link demo Paradisely
 
 [Paradisely | Jelajahi Indahnya Indonesia Bersama Kami!](https://paradisely.000webhostapp.com/)
